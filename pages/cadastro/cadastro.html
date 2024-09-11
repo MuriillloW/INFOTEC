@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="script.js">
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+    
+</head>
+<body>
+    <div class="wrapper">
+        <form action="/index.html" id="form">
+            <h1>Cadastro</h1>
+
+            <div>
+                <div id="input-box" class="input-control">
+                    <input type="text" placeholder="Crie seu Login" id="login" maxlength="6">
+                    <i class="bx bx-user-circle"></i>
+                    <div class="error"></div>
+                </div>
+                <div id="input-box" class="input-control">
+                    <input type="text" id="name" placeholder="Digite o seu nome" minlength="15" maxlength="60">
+                    <i class="bx bx-user"></i>
+                    <div class="error"></div>
+                </div>
+            <div id="input-box" class="input-control" >               
+                <input type="email" placeholder="Digite seu e-mail"  id="email">
+                <i class='bx bx-envelope' ></i>
+                <div class="error"></div>
+            </div>
+            <div id="input-box" class="input-control">    
+                <input type="password" placeholder="Crie sua Senha"  id="senha">
+                <i class='bx bx-lock-alt' ></i>
+                <div class="error"></div>
+            </div>
+            <div id="input-box" class="input-control">
+                <input type="password" placeholder="Confirme sua Senha"  id="confirmar">
+                <i class='bx bx-lock-alt' ></i>
+                <div class="error"></div>
+            </div>
+            <div id="input-box" class="input-control">
+                <input type="text" name="phone" placeholder="Digite seu telefone" id="phone">
+                <i class="bx bx-phone"></i>
+                <div class="error"></div>
+            </div>
+            <div id="input-box" class="input-control">
+                <input type="text" name="CPF" id="cpf" placeholder="Digite seu cpf/cnpj" minlength="14">
+                <i class="bx bx-list-check"></i>
+                <div class="error"></div>
+            </div>
+            <div id="input-box" class="input-control">
+                <input type="text" name="cep" id="cep" placeholder="Digite seu cep" minlength="10">
+                <i class="bx bx-home"></i>
+                <div class="error"></div>
+            </div>
+            <div id="input-box" class="input-control">
+                <input type="date" name="data" id="data" placeholder="Digite sua data de nascimento">
+                
+                <div class="error"></div>
+            </div>
+            <div>
+            
+                <label for="gênero"> Escolha seu Gênero:</label>
+                <div class="input-control"></div>
+                <input type="radio" id="genero" class="genero" name="genero">Masculino
+                <input type="radio" id="genero" class="genero" name="genero">Feminino
+                <input type="radio" id="genero" class="genero" name="genero">Outros
+                <div class="error"></div>
+            </div>
+            <button type="submit" class="btn" id="btn" value="Registrar-se">Registrar-se</button>
+            <div class="register-link">
+            </div> 
+            <div class="register-link">
+                <p>Já possui uma conta? <a href="../login/login.html">Login</a>
+            </div>
+        </div>
+        </form>
+        <box-icon name='home'></box-icon>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
